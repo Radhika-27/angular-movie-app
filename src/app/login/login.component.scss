@@ -1,0 +1,26 @@
+.card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.header{
+  text-align: center;
+}
+.full-width{
+  width: 100%;
+}
+.forget-password{
+  padding-left: 0px;
+}
+.email-input{
+  padding-top: 10px;
+}
+.alink{
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+}
+.set{
+  padding-left: 25em;
+}

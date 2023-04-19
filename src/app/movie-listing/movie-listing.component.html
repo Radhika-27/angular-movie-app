@@ -1,0 +1,36 @@
+<div class="flex-container">
+  <div style="flex-grow: 100">
+    <form style="flex-grow: 100" [formGroup]="mform">
+      <mat-form-field>
+        <mat-label>Search Movies by name</mat-label>
+        <input matInput formControlName="name" />
+        <mat-icon matPrefix>search</mat-icon>
+      </mat-form-field>
+    </form>
+  </div>
+  <div style="flex-grow: 2">
+    <button mat-raised-button color="primary" (click)="refresh()">
+      Refresh
+    </button>
+  </div>
+</div>
+<div style="display: flex; flex-wrap: wrap">
+  <mat-card
+    *ngFor="let movie of movielisting | filter : searchText"
+    style="width: 200px; cursor: pointer"
+    (click)="dialogueOpen(movie)"
+  >
+    <img
+      class="img"
+      [src]="
+        'https://ui-avatars.com/api?name=' + movie.title + '&background=random'
+      "
+      alt="Avatar"
+      height="100px"
+      width="100px"
+    />
+    <h2>{{ movie.title }}</h2>
+    <div class="text">{{ movie.description }}</div>
+    <h5 *ngIf="movie.genres">Geners : {{ movie.genres }}</h5>
+  </mat-card>
+</div>

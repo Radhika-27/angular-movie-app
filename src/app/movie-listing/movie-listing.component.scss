@@ -1,0 +1,40 @@
+.mat-card{
+  margin: 2em auto;
+  text-align: center;
+  max-height: 600px;
+  height: 16em;
+  width: 381px;
+  margin-top: 41px;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin: 2em 2em 2em 2em;
+  }
+  .card {
+    height:10em;
+    width: 10em;
+  }
+  .card-picture {
+    width: 23%;
+    margin-bottom: 2%;
+  }
+  .container {
+    min-height: 100%;
+    width: 100%;
+  }
+.text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.img {
+  border-radius: 50%;
+
+}
+
+.right {
+  margin-left: 77%;
+}
+
